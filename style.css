@@ -38,15 +38,34 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    width: 100%;
     width: 100px; /* Set a fixed width of 300px */
 }
 
 .yes {
     background-color: #ff4081;
     color: rgb(17, 0, 0);
+    width: 100%;
+    max-width: 100px;
 }
 
 .no {
     background-color: #bbb;
     color: rgb(15, 0, 0);
+    width:100%;
+    max-width: 100px;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button text size */
+        width: 80%;
+    }
+
+    .container {
+        padding: 15px;
+    }
 }
